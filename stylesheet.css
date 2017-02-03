@@ -9,6 +9,10 @@
     text-align: center;
   }
 
+  img {
+    border: none;
+  }
+
 h1 {
   color: #fff
 }
@@ -26,6 +30,15 @@ body {
   background-color: #bbbbbb;
 }
 
+#link {
+  color: #fff
+}
+
+#nav {
+    padding: 0;
+	list-style-type: none;
+}
+
 #nav li {
     margin: 0;
     padding: 0;
@@ -34,7 +47,7 @@ body {
 }
 
 #nav a:hover, a:active {
-    background-color: #7a991a;
+    background-color: #fff;
 }
 
 #nav {
@@ -42,6 +55,12 @@ body {
   list-style-type: none;
 }
 
-img {
-	border: none;
-}
+#nav a:link, a:visited {display:block;
+  color: #bbb;
+  background-color: #fff;
+  font-weight: bold;
+  text-align:center;
+  text-decoration: none;
+  padding: 4px;
+  font-family: Helvetica, Arial, sans-serif;}
+	
