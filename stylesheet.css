@@ -21,7 +21,7 @@ h1 {
 
 p {
   color: #566a68;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto+Slab", serif;
 }
 
 h1 {
@@ -66,7 +66,7 @@ body {
   text-align:center;
   text-decoration: none;
   padding: 20px;
-  font-family: "Montserrat", sans-serif;}
+  font-family: "Raleway", sans-serif;}
 
   #footer {
       color: #566a68;
