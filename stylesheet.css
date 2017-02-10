@@ -51,7 +51,7 @@ body {
 
 #nav a:hover, a:active {
     background-color: #fff;
-    color: #fff
+    color: #ddd
 }
 
 #nav {
@@ -73,5 +73,4 @@ body {
       font-family: "Raleway", sans-serif;;
       font-size: .8em;
       padding-top: 30px;
-      border-top: : 1px solid black;
   }
