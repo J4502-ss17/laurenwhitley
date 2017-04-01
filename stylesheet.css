@@ -1,5 +1,6 @@
 /*styles go here*/
 
+
   #container {
     width:95%;
     margin-top: 0;
@@ -74,3 +75,106 @@ body {
       font-size: .8em;
       padding-top: 30px;
   }
+
+/*navigation styles*/
+
+  .navigation{
+  	list-style: none;
+  	margin: 0;
+    color: #bbb;
+  	background:gray;
+    font-family: "Raleway", sans-serif;
+    padding: 0;
+    display: flex;
+  	flex-flow: column;
+  }
+
+  .navigation a {
+  	text-decoration: none;
+  	display: block;
+  	color: white;
+      text-align:center;
+      padding: 10px;
+      border-bottom:1px solid black;
+  }
+
+  .navigation li:last-of-type a{
+    border-bottom: none;
+  }
+
+  /*Setting up flexible boxes*/
+
+  .wrapper {
+      display: flex;
+      flex-flow: row wrap;
+  }
+
+  header, article, aside, footer {
+    flex: 1 100%;
+    padding: 10px;
+  }
+
+/*styles that activate when larger than 800 px*/
+
+  @media (min-width:800px) {
+
+      .navigation {
+          flex-flow: row wrap;
+          justify-content: flex-end;
+      }
+
+      .navigation a {
+          border: none;
+      }
+
+      .navigation a:hover {
+      	background: black;
+      }
+
+
+
+      aside {
+        flex: 1 auto;
+    }
+
+    article {
+		flex: 3 0px;
+	}
+
+    .contact {
+        order: 1;
+    }
+
+    article {
+        order: 2;
+    }
+
+    .links {
+        order: 3;
+    }
+
+    footer {
+        order: 4;
+    }
+
+
+    article {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+  }
+
+
+  .image {
+      width: 45%;
+      margin-right: 10px;
+  }
+
+  .contact {
+      width: 45%;
+  }
+
+  .first {
+      margin-top: 0;
+  }
+}
