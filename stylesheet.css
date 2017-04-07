@@ -1,7 +1,7 @@
 /*styles go here*/
 
 
-  #container {
+  #wrapper {
     width:95%;
     margin-top: 0;
     margin-right: auto;
@@ -12,8 +12,8 @@
 
   img {
     border: none;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
 h1 {
@@ -22,11 +22,11 @@ h1 {
 
 p {
   color: #566a68;
-  font-family: "Roboto+Slab", serif;
+  font-family: "Raleway", serif;
 }
 
 h1 {
-  font-family: "Sansita", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 65px;
 }
 
@@ -93,9 +93,9 @@ body {
   	text-decoration: none;
   	display: block;
   	color: white;
-      text-align:center;
-      padding: 10px;
-      border-bottom:1px solid black;
+    text-align:center;
+    padding: 10px;
+    border-bottom:1px solid black;
   }
 
   .navigation li:last-of-type a{
@@ -114,9 +114,34 @@ body {
     padding: 10px;
   }
 
-/*styles that activate when larger than 800 px*/
+  img {
+    display: none;
+}
 
-  @media (min-width:800px) {
+.logo{
+  width: 10vh;
+  display: block;
+  justify-content: center;
+}
+
+/*styles that activate when larger than 600 px*/
+@media screen and (min-width: 600px) {
+
+    #wrapper {
+        width: 100%;
+    }
+
+    img {
+        display: block;
+    }
+
+    .logo {
+      display: none;
+    }
+}
+
+/*styles that activate when larger than 800 px*/
+@media screen and (min-width: 800px) {
 
       .navigation {
           flex-flow: row wrap;
@@ -131,17 +156,15 @@ body {
       	background: black;
       }
 
-
-
       aside {
         flex: 1 auto;
-    }
+      }
 
     article {
-		flex: 3 0px;
-	}
+		    flex: 3 0px;
+	     }
 
-    .contact {
+    .aside-1 {
         order: 1;
     }
 
@@ -149,7 +172,7 @@ body {
         order: 2;
     }
 
-    .links {
+    .aside-2 {
         order: 3;
     }
 
@@ -158,23 +181,38 @@ body {
     }
 
 
+
     article {
       display: flex;
       flex-flow: row;
       flex-wrap: wrap;
+      justify-content: center;
   }
 
-
-  .image {
-      width: 45%;
-      margin-right: 10px;
-  }
-
-  .contact {
-      width: 45%;
-  }
-
-  .first {
-      margin-top: 0;
-  }
+  #wrapper {
+    width: 70%;
+    max-width: 60em;
 }
+
+  #bar {
+    padding: 5px;
+    width: 100%;
+}
+  article {
+    max-width: 40em;
+    margin-left: 5em;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    margin-left: 1.8em;
+  }
+
+  .poem{
+    max-width: 55%;
+    justify-content: center;
+  }
+  }
